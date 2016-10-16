@@ -45,8 +45,6 @@ Underscore.js Microtemplates:
 
 **Controller** are an intermediary between models and views which are classically responsible for updating the model when the user manipulates the view.
 
-
-
 To summarize, the MVC pattern brings modularity to application developers and it enables:
 - Reusable and extendable code.
 - Separation of view logic from business logic.
@@ -96,8 +94,6 @@ Triggers (data-triggers) also allow us to further react to changes in the state 
 
 Whilst it may appear the ViewModel is completely responsible for the Model in MVVM, there are some subtleties with this relationship worth noting. The ViewModel can expose a Model or Model attributes for the purposes of data-binding and can also contain interfaces for fetching and manipulating properties exposed in the view.
 
-
-
 ## MVC Vs. MVP Vs. MVVM
 
 ![](http://www.dofactory.com/images/javascript-mv1.png)
@@ -108,11 +104,10 @@ In MVP, the role of the controller is replaced with a Presenter. Presenters sit 
 
 MVVM consequently allows us to create View-specific subsets of a Model which can contain state and logic information, avoiding the need to expose the entire Model to a View. Unlike MVP’s Presenter, a ViewModel is not required to reference a View. The View can bind to properties on the ViewModel which in turn expose data contained in Models to the View. As we’ve mentioned, the abstraction of the View means there is less logic required in the code behind it.
 
-
-
-
 ## Frameworks
-
+- [AngularJS](https://angularjs.org/) - MVC
+- [Backbone.js](http://backbonejs.org/) - MVP
+- [Vue.js](https://vuejs.org/) - MVVM
 
 # References:
 - https://addyosmani.com/resources/essentialjsdesignpatterns/book/#whatisapattern
